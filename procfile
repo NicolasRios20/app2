@@ -1,0 +1,4 @@
+realease: python manage.py makemigrations --no-input
+realease: python manage.py migrate --no-input
+
+web: gunicorn ApiRest.wsgi
